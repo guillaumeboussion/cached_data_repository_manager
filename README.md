@@ -11,29 +11,31 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A simple project handling cache management in a Flutter app. 
+This is using Riverpod, Sembast & GraphQL.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+There's tons of things to do, as it's just an export of my repository system. 
+For the moment, explore the package to see what you can do with it :)
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
+In your Material App, simply add 
 ```dart
-const like = 'sample';
+ @override
+ void initState() {
+    super.initState();
+    ref.read(configurationProvider).init(
+        Configuration(
+            graphqlEndpoint: ...,
+            basicUsername: ...,
+            basicPassword: ...,
+        ),
+    );
+ }
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Work in progress.
