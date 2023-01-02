@@ -1,0 +1,1 @@
+enum RequestType { guest, user }
